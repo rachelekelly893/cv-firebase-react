@@ -3,7 +3,7 @@ import cvData from '../../cvData';
 
 export default function Summary() {
     return (
-        <div id="extra" className="extra-curricular">
+        <div id="extra" className="Extra">
             <h2>{cvData.extraCurricular.title}:</h2>
             <ul>
                 <li>{cvData.extraCurricular.line1}</li>

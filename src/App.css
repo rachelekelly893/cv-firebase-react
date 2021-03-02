@@ -1,7 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif, Times, serif;
   color: #646e7d;
-  font-size: 12pt;
+  font-size:calc(12px + .3vw);
   background-color: #fff;
   margin: 0;
 }
@@ -11,9 +11,9 @@ ul {
 }
 
 h1, h2 {
-  font-size: 16pt;
+  font-size:calc(12px + .7vw);
   font-weight: bold;
-  color: #3d3e40;
+  color: #345597;
 }
 
 b {
@@ -21,40 +21,19 @@ b {
 }
 
 .container {
-    background-color: #f0f3fa;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    background-color: #cfd4db;
+    padding: 20px 30px;
+    margin: 2% auto;
 }
 
-#nav-container {
-  margin-right: auto;
-  margin-left: auto;
-  text-align:center;
-}
-
-#nav-container > nav > a {
-  background-color: #74768a;
-  color: white;
-  font-weight: 600px;
-  padding: 14px 25px;
-  display: inline-block;
-}
-
-#nav-container > nav > a:hover {
-  background-color: #adb4f7;
-}
-
-img {
+.avatar {
   border-radius: 200px;
   background-color: #d8e1f5;
   border: 5px solid #d8e1f5;
   padding: 5px;
-  margin-left: 50px;
-  width: 20%;
+  margin: 20px 20px;
+  min-width: 150px !important;
+  width: 11vw;
   float: left;
 }
 
@@ -62,15 +41,9 @@ img {
   text-indent:40px;
 }
 
-#details > div {
-  float: left;
-  margin-left: 50px;
-  margin-top: 20px;
-}
-
-#details, #summary, #education, #experience, #extra, #technical {
+.Details, .Summary, .Education, .Experience, .Extra, .Technical {
   width: 100%;
-  padding: 15px;
+  padding: 20px;
   border-radius: 8px;
   float: left;
   margin: 15px;
@@ -79,11 +52,6 @@ img {
   background-color: #f7f7f7;
 }
 
-#btn {
-  width: 300px; 
-  margin: 0 auto;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  text-align: center;
+a {
+  text-decoration: none !important;
 }
-

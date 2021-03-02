@@ -11,14 +11,13 @@ function App() {
   return (
     <div>
       <NavBar/>
+      <div className="CV-content">
       <Details/>
       <Summary/>
-      <Education/>
       <Experience/>
+      <Education/>
       <ExtraCurricular/>
       <TechnicalSkills/>
-      <div id="btn">
-        <a className="nav-item" href="#nav-container">To Top of Page</a>
       </div>
     </div>
   );

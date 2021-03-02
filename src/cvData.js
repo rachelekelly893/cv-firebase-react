@@ -5,6 +5,7 @@ const cvData = {
         name: "Rachel Kelly",
         role: "Apprentice Software Developer",
         email: "Rachel.2.Kelly@Atos.net",
+        phone: '07930858350',
         linkedIn: "https://www.linkedin.com/in/rachel-kelly-30149b168"
     },
     education: {
@@ -52,7 +53,7 @@ const cvData = {
         title: "Technical Skills:",
         experienced: {
             title: "Some experience with:",
-            info: "HTML  CSS  JavaScript  Java  Python"
+            info: "HTML  CSS  JavaScript  Java  Python React"
         },
         familiar: {
             title: "Less familiar with:",
