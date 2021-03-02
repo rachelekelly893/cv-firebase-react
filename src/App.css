@@ -22,8 +22,8 @@ b {
 
 .container {
     background-color: #f0f3fa;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 25px;
@@ -70,7 +70,7 @@ img {
 
 #details, #summary, #education, #experience, #extra, #technical {
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   border-radius: 8px;
   float: left;
   margin: 15px;
@@ -84,5 +84,6 @@ img {
   margin: 0 auto;
   margin-bottom: 15px;
   margin-top: 15px;
+  text-align: center;
 }
 
