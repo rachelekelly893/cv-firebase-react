@@ -1,13 +1,14 @@
 import React from 'react';
+import cvData from '../../cvData';
 
 export default function Summary() {
     return (
         <div id="summary" className="Summary">
-            <h2>Summary:</h2>
+            <h2>{cvData.summary.title}</h2>
             <ul>
-                <li>Driven and motivated individual with varied work experience and well proven customer service, rapport building, sales and communication skills.</li>
-                <li>Self motivated with well evidenced ability to work well both independently and as part of a team.</li>
-                <li>Keen and quick to learn and with a genuine interest in software development, has been working independently to develop these skills.</li>
+                <li>{cvData.summary.line1}</li>
+                <li>{cvData.summary.line2}</li>
+                <li>{cvData.summary.line3}</li>
             </ul>
         </div>
     )

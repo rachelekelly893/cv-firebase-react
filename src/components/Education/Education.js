@@ -1,11 +1,12 @@
 import React from 'react';
+import cvData from '../../cvData';
 
 export default function Education() {
     return (
         <div id="education" className="Education">
-            <h2>Education:</h2>
-            <p> 1st Year Diploma Loughborough University Social Psychology With Criminology – First (72)</p>
-            <p>BTEC Level 3 H&SC - D*D*D* (A*A*A* at A level)</p>
+            <h2>{cvData.education.title}</h2>
+            <p>{cvData.education.line1}</p>
+            <p>{cvData.education.line2}</p>
         </div>
     )
 }

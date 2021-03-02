@@ -1,14 +1,15 @@
 import React from 'react';
+import cvData from '../../cvData';
 
 export default function TechnicalSkills() {
     return (
         <div id="technical" className="TechnicalSkills">
-            <h2>Technical Skills:</h2>
+            <h2>{cvData.technicalSkills.title}</h2>
             <ul>
-                <li>Some experience with:</li>
-                    <p className="tab">HTML  CSS  JavaScript  Java  Python</p>
-                <li>Less familiar with:</li>
-                    <p className="tab">Angular  C++  TypeScript  PHP  SQL</p>
+                <li>{cvData.technicalSkills.experienced.title}</li>
+                    <p className="tab">{cvData.technicalSkills.experienced.info}</p>
+                <li>{cvData.technicalSkills.familiar.title}</li>
+                    <p className="tab">{cvData.technicalSkills.familiar.info}</p>
             </ul>
         </div>
     )
