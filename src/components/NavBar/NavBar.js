@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function NavBar() {
+
     return (
         <div>
            <nav className="navbar navbar-inverse  navbar-fixed-top">
@@ -21,10 +22,35 @@ export default function NavBar() {
                         <li><a className="nav-item" href="#experience">Experience</a></li>
                         <li><a className="nav-item" href="#extra">Extra-Curricular</a></li>
                         <li><a className="nav-item" href="#technical">Technical Skills</a></li>
+                        
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox" />
+                                <div class="slider round"></div>
+                            </label>
+                            <em>Dark Mode</em>
+                        </div>
                     </ul>
                 </div>
                 </div>
             </nav>
         </div>
     )
+}
+window.onload=function(){
+
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
 }

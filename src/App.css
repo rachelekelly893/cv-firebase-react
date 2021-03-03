@@ -1,8 +1,26 @@
+:root {
+  --primary-color: #cfd4db;
+  --secondary-color: #536390;
+  --font-color: #646e7d;
+  --bg-color: rgb(232, 233, 235);
+  --heading-color: #345597;
+  --avatar-colour: #d8e1f5;
+}
+
+[data-theme="dark"] {
+  --primary-color: #536390;
+  --secondary-color: #cfd4db;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+  --avatar-colour: #1f2941;
+}
+
 body {
   font-family: 'Open Sans', sans-serif, Times, serif;
-  color: #646e7d;
+  color:var(--font-color);
   font-size:calc(12px + .3vw);
-  background-color: #fff;
+  background-color: var(--bg-color);
   margin: 0;
 }
 
@@ -13,7 +31,7 @@ ul {
 h1, h2 {
   font-size:calc(12px + .7vw);
   font-weight: bold;
-  color: #345597;
+  color: var(--heading-color);
 }
 
 b {
@@ -21,15 +39,15 @@ b {
 }
 
 .container {
-    background-color: #cfd4db;
+    background-color: var( --primary-color);
     padding: 20px 30px;
     margin: 2% auto;
 }
 
 .avatar {
   border-radius: 200px;
-  background-color: #d8e1f5;
-  border: 5px solid #d8e1f5;
+  background-color: var(--avatar-colour);
+  border: 5px solid var(--avatar-colour);
   padding: 5px;
   margin: 20px 20px;
   min-width: 150px !important;
@@ -49,9 +67,65 @@ b {
   margin: 15px;
   margin-right: auto;
   margin-left: auto;
-  background-color: #f7f7f7;
+  background-color: var(--bg-color);
 }
 
 a {
   text-decoration: none !important;
+}
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

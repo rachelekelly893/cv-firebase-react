@@ -34,7 +34,8 @@ const cvData = {
         experience3: {
             title: "OUTBOUND SALES ADVISOR• DIXONS CARPHONE WAREHOUSE",
             date: "April 2018 - September 2018",
-            text: ["Actively contacted customers to maintain and grow business through extending/starting new contracts. Worked to targets."]
+            text: 
+                ["Actively contacted customers to maintain and grow business through extending/starting new contracts. Worked to targets."]
         }
     },
     extraCurricular: {

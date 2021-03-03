@@ -9,7 +9,7 @@ import TechnicalSkills from './components/TechnicalSkills/TechnicalSkills'
 
 function App() {
   return (
-    <div>
+      <div>
       <NavBar/>
       <div className="CV-content">
       <Details/>
