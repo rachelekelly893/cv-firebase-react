@@ -2,13 +2,14 @@ import React from 'react';
 import cvData from '../../cvData';
 
 export default function Summary() {
+
+    const sumText = cvData.summary.text.map(item => <li>{item}</li>)
+
     return (
         <div id="summary" className="Summary">
             <h2>{cvData.summary.title}</h2>
             <ul>
-                <li>{cvData.summary.line1}</li>
-                <li>{cvData.summary.line2}</li>
-                <li>{cvData.summary.line3}</li>
+                {sumText}
             </ul>
         </div>
     )

@@ -17,7 +17,7 @@ function App() {
       <Experience/>
       <Education/>
       <ExtraCurricular/>
-      <TechnicalSkills/>
+      {/* <TechnicalSkills/> */}
       </div>
     </div>
   );

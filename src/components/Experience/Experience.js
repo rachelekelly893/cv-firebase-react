@@ -2,6 +2,11 @@ import React from 'react';
 import cvData from '../../cvData';
 
 export default function Experience() {
+
+    const ex1Text = cvData.experience.experience1.text.map(item => <li>{item}</li>)
+    const ex2Text = cvData.experience.experience2.text.map(item => <li>{item}</li>)
+    const ex3Text = cvData.experience.experience3.text.map(item => <li>{item}</li>)
+
     return (
         <div id="experience" className="Experience">
             <h2>{cvData.experience.title}:</h2>
@@ -9,22 +14,19 @@ export default function Experience() {
                 <li>{cvData.experience.experience1.title}</li>
                 <p><i>{cvData.experience.experience1.date}</i></p>
                     <ul>
-                        <li>{cvData.experience.experience1.line1}</li>
-                        <li>{cvData.experience.experience1.line2}</li>
-                        <li>{cvData.experience.experience1.line3}</li>
+                        {ex1Text}
                     </ul>
                 <br/>
                 <li>{cvData.experience.experience2.title}</li>
                 <p><i>{cvData.experience.experience2.date}</i></p>
                     <ul>
-                        <li>{cvData.experience.experience2.line1}</li>
-                        <li>{cvData.experience.experience2.line2}</li>
+                        {ex2Text}
                     </ul>
                 <br/>
                 <li>{cvData.experience.experience3.title}</li>
                 <p><i>{cvData.experience.experience3.date}</i></p>
                     <ul>
-                        <li>{cvData.experience.experience3.line1}</li>
+                        {ex3Text}
                     </ul>
             </ul>
         </div>
