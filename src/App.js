@@ -1,4 +1,5 @@
 import './App.css';
+import SideBar from './components/SideBar/SideBar';
 import NavBar from './components/NavBar/NavBar';
 import Details from './components/Details/Details';
 import Summary from './components/Summary/Summary';
@@ -9,15 +10,18 @@ import TechnicalSkills from './components/TechnicalSkills/TechnicalSkills'
 
 function App() {
   return (
+    <div>
       <div>
+      <SideBar/>
       <NavBar/>
+      </div>
       <div className="CV-content">
       <Details/>
       <Summary/>
       <Experience/>
       <Education/>
       <ExtraCurricular/>
-      {/* <TechnicalSkills/> */}
+      <TechnicalSkills/>
       </div>
     </div>
   );

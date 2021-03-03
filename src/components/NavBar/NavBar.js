@@ -21,8 +21,7 @@ export default function NavBar() {
                         <li><a className="nav-item" href="#education">Education</a></li>
                         <li><a className="nav-item" href="#experience">Experience</a></li>
                         <li><a className="nav-item" href="#extra">Extra-Curricular</a></li>
-                        <li><a className="nav-item" href="#technical">Technical Skills</a></li>
-                        
+                        <li><a className="nav-item" href="#technical">Technical Skills</a></li>   
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <div class="theme-switch-wrapper">
@@ -39,6 +38,7 @@ export default function NavBar() {
         </div>
     )
 }
+
 window.onload=function(){
 
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
