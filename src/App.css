@@ -43,8 +43,8 @@ b {
     padding: 20px 30px;
     margin-top: 3%;
     margin-left: 15%;
-    width: 85%;
-    max-width: 100%-200px;
+    width: calc(100% - 250px);
+    float: right;
 }
 
 .avatar {
@@ -136,7 +136,7 @@ input:checked + .slider:before {
 .sidenav {
   height: 100%; 
   min-width: 200px !important;
-  width: 15vw; 
+  width: 250px; 
   position: fixed; 
   z-index: 1; 
   top: 0; 
@@ -149,7 +149,6 @@ input:checked + .slider:before {
 #sidebar > div {
   display:block;
   padding: auto;
-  margin:10px;
   text-decoration: none;
   display: block;
   text-align: center;
