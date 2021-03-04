@@ -7,14 +7,7 @@
   --avatar-colour: #d8e1f5;
 }
 
-[data-theme="dark"] {
-  --primary-color: #536390;
-  --secondary-color: #cfd4db;
-  --font-color: #e1e1ff;
-  --bg-color: #161625;
-  --heading-color: #818cab;
-  --avatar-colour: #1f2941;
-}
+/* || General */
 
 body {
   font-family: 'Open Sans', sans-serif, Times, serif;
@@ -24,28 +17,40 @@ body {
   margin: 0;
 }
 
-ul {
-  list-style-type:square;
-}
-
 h1, h2 {
   font-size:calc(12px + .7vw);
   font-weight: bold;
   color: var(--heading-color);
 }
 
+ul {
+  list-style-type:square;
+}
+
+a {
+  text-decoration: none !important;
+}
+
 b {
   font-weight: bold;
 }
 
-.container {
-    background-color: var( --primary-color);
-    padding: 20px 30px;
-    margin-top: 3%;
-    margin-left: 15%;
-    width: calc(100% - 250px);
-    float: right;
+.tab {
+  text-indent:40px;
 }
+
+/* || Container */
+
+.container {
+  background-color: var( --primary-color);
+  padding: 2% 2% 10%;
+  margin-top: 2%;
+  margin-left: 15%;
+  width: calc(100% - 300px);
+  float: right;
+}
+
+/* || Avatar */
 
 .avatar {
   border-radius: 200px;
@@ -58,24 +63,71 @@ b {
   width: 11vw;
 }
 
-.tab {
-  text-indent:40px;
-}
+/* || Components */
 
-.Details, .Summary, .Education, .Experience, .Extra, .Technical {
-  width: 100%;
+.Component {
+  width: 80%;
   padding: 20px;
   border-radius: 8px;
-  float: left;
-  margin: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 15px auto;
   background-color: var(--bg-color);
 }
 
-a {
-  text-decoration: none !important;
+/* || Sidebar / Details */
+
+.sidenav {
+  height: 95%; 
+  min-width: 200px !important;
+  width: 300px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: var(var(--bg-color)); 
+  overflow-x: hidden; 
+  padding: 5% 10px;
+  margin-top: 2%;
 }
+
+#sidebar > div {
+  display:block;
+  padding: auto;
+  text-align: center;
+  font-size: calc(12px + .45vw);
+}
+
+#details {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .sidenav {
+      display: none;
+  }
+  .container {
+    margin-left: auto;
+    margin-top: 8%;
+    width: 100%;
+  }
+  }
+  @media (min-width: 768px) {
+    #details, #myNavbar > ul:nth-child(1) > li:nth-child(1) {
+      display:none;
+    }
+}
+
+/* || Dark mode */
+
+[data-theme="dark"] {
+  --primary-color: #536390;
+  --secondary-color: #cfd4db;
+  --font-color: #e1e1ff;
+  --bg-color: #161625;
+  --heading-color: #818cab;
+  --avatar-colour: #1f2941;
+}
+
+/* || Dark mode switch  - https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8*/
 
 .theme-switch-wrapper {
   display: flex;
@@ -131,41 +183,4 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-.sidenav {
-  height: 100%; 
-  min-width: 200px !important;
-  width: 250px; 
-  position: fixed; 
-  z-index: 1; 
-  top: 0; 
-  left: 0;
-  background-color: var(var(--bg-color)); 
-  overflow-x: hidden; 
-  padding-top: 5%;
-}
-
-#sidebar > div {
-  display:block;
-  padding: auto;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .sidenav {
-      display: none;
-  }
-  .container {
-    margin-left: auto;
-    margin-top: 8%;
-    width: 100%;
-  }
-  }
-  @media (min-width: 768px) {
-    .Details, #myNavbar > ul:nth-child(1) > li:nth-child(1) {
-      display:none;
-    }
 }

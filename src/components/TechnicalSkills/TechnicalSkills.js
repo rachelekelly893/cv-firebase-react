@@ -3,7 +3,7 @@ import cvData from '../../cvData';
 
 export default function TechnicalSkills() {
     return (
-        <div id="technical" className="Technical">
+        <div id="technical" className="Component">
             <h2>{cvData.technicalSkills.title}</h2>
             <ul>
                 <li>{cvData.technicalSkills.experienced.title}</li>

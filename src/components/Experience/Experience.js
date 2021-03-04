@@ -8,7 +8,7 @@ export default function Experience() {
     const ex3Text = cvData.experience.experience3.text.map(item => <li>{item}</li>)
 
     return (
-        <div id="experience" className="Experience">
+        <div id="experience" className="Component">
             <h2>{cvData.experience.title}:</h2>
             <ul>
                 <li>{cvData.experience.experience1.title}</li>
