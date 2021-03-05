@@ -12,9 +12,9 @@ export default function NavBar() {
             <div className="text">
                 <h1>&emsp;{cvData.details.name}</h1>
                     <p><b>&emsp;{cvData.details.role}</b></p>
-                    <p><a href={"mailto:" + cvData.details.email}>&emsp;<i className="far fa-envelope"></i>&emsp;{cvData.details.email}</a></p>
+                    <p><a href={"mailto:" + cvData.details.email} target="_blank" rel="noopener noreferrer">&emsp;<i className="far fa-envelope"></i>&emsp;{cvData.details.email}</a></p>
                     <p><a href={"tel:"+cvData.details.phone}>&emsp;<i className="fas fa-mobile-alt"></i>&emsp;{cvData.details.phone}</a></p>
-                    <p><a href={cvData.details.linkedIn}>&emsp;<i className="fas fa-address-book"></i>&emsp;Linked In</a></p>
+                    <p><a href={cvData.details.linkedIn} target="_blank" rel="noopener noreferrer">&emsp;<i className="fas fa-address-book"></i>&emsp;Linked In</a></p>
             </div>
         </div>
     )

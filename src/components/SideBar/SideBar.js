@@ -14,11 +14,11 @@ export default function SideBar() {
                 <br/>
                 <p><b>{cvData.details.role}</b></p>
                 <br/>
-                <p><a href={"mailto:" + cvData.details.email}><i className="far fa-envelope"></i>&emsp;E-Mail</a></p>
+                <p><a href={"mailto:" + cvData.details.email} target="_blank" rel="noopener noreferrer"><i className="far fa-envelope"></i>&emsp;E-Mail</a></p>
                 <br/>
                 <p><a href={"tel:"+cvData.details.phone}><i className="fas fa-mobile-alt"></i>&emsp;{cvData.details.phone}</a></p>
                 <br/>
-                <p><a href={cvData.details.linkedIn}><i className="fas fa-address-book"></i>&emsp;Linked In</a></p>
+                <p><a href={cvData.details.linkedIn} target="_blank" rel="noopener noreferrer"><i className="fas fa-address-book"></i>&emsp;Linked In</a></p>
             </div>
         </div>
     )

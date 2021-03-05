@@ -43,7 +43,7 @@ b {
 
 .container {
   background-color: var( --primary-color);
-  padding: 2% 2% 10%;
+  padding: 2% 2%;
   margin-top: 2%;
   margin-left: 15%;
   width: calc(100% - 300px);
@@ -182,4 +182,32 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* || React Logo */
+
+.React-logo {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+  margin: auto;
+  padding: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

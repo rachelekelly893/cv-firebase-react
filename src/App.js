@@ -6,7 +6,8 @@ import Summary from './components/Summary/Summary';
 import Education from './components/Education/Education';
 import Experience from './components/Experience/Experience';
 import ExtraCurricular from './components/ExtraCurricular/ExtraCurricular';
-import TechnicalSkills from './components/TechnicalSkills/TechnicalSkills'
+import TechnicalSkills from './components/TechnicalSkills/TechnicalSkills';
+import ReactLogo from './components/ReactLogo/ReactLogo';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <ExtraCurricular/>
       <TechnicalSkills/>
       </div>
+      <ReactLogo/>
     </div>
   );
 }

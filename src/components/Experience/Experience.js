@@ -3,9 +3,9 @@ import cvData from '../../cvData';
 
 export default function Experience() {
 
-    const ex1Text = cvData.experience.experience1.text.map(item => <li>{item}</li>)
-    const ex2Text = cvData.experience.experience2.text.map(item => <li>{item}</li>)
-    const ex3Text = cvData.experience.experience3.text.map(item => <li>{item}</li>)
+    const ex1Text = cvData.experience.experience1.data.map(item => <li key={item.id}>{item.text}</li>)
+    const ex2Text = cvData.experience.experience2.data.map(item => <li key={item.id}>{item.text}</li>)
+    const ex3Text = cvData.experience.experience3.data.map(item => <li key={item.id}>{item.text}</li>)
 
     return (
         <div id="experience" className="Component">

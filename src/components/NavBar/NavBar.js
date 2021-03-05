@@ -23,11 +23,11 @@ export default function NavBar() {
                         <li><a className="nav-item" href="#extra">Extra-Curricular</a></li>
                         <li><a className="nav-item" href="#technical">Technical Skills</a></li>   
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
+                    <ul className="nav navbar-nav navbar-right">
+                        <div className="theme-switch-wrapper">
+                            <label className="theme-switch" htmlFor="checkbox">
                                 <input type="checkbox" id="checkbox" />
-                                <div class="slider round"></div>
+                                <div className="slider round"></div>
                             </label>
                             <b>&emsp;Dark Mode</b>
                         </div>
